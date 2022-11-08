@@ -1,0 +1,15 @@
+# Name of website
+title: QNN Write-ups
+
+# Your name to show in the footer
+author: Torque Dandachi
+
+remote_theme: LeNPaul/Lagrange
+
+# If you want your website to generate an RSS feed, provide a description
+# The URL for the feed will be https://<your_website>/feed.xml
+rss-description: A public facing portal of some of the write-ups I produced in my research at MIT's QNN group.
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
