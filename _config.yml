@@ -1,5 +1,6 @@
 # Name of website
 title: QNN Write-ups
+github: itstorque
 
 # Your name to show in the footer
 author: Torque Dandachi
@@ -16,15 +17,17 @@ plugins:
   - jekyll-remote-theme
 
 # jekyll-paginate configuration
-paginate:            5
+paginate: 5
 
 # Build settings
 markdown:            kramdown
 highlighter:         rouge
 permalink:           /:title
 
-remote_theme: benbalter/retlab
-#LeNPaul/Lagrange
+usemathjax: true
+
+remote_theme: niklasbuschmann/contrast@v2.11
+
 defaults:
   -
     scope:
@@ -40,3 +43,20 @@ defaults:
     values:
       layout: page
       comments: false
+
+
+# Layout
+
+show_excerpts: false        # show article excerpts on the home page
+show_frame: false           # adds a gray frame to the site
+show_sidebar: false        # show a sidebar instead of the usual header
+
+# excerpt_separator: "\n\n\n"
+
+# Menu
+
+navigation:                # accepts {file, title, url, icon, sidebaricon}
+  - {file: "index.html"}
+  - {file: "README.md"}
+
+# mathjax: true

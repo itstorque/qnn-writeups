@@ -1,0 +1,13 @@
+<header>
+    <h1><a href="{{ include.post.url | relative_url }}">{{ include.post.title }}</a></h1>
+    {%- assign date_format = site.date_format | default: "%B %d, %Y" -%}
+    <time datetime="{{ include.post.date | date_to_xmlschema }}">{{ include.post.date | date: date_format }}</time>
+  </header>
+    
+<!-- for mathjax support -->
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+});
+</script>
+<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS_CHTML"></script>

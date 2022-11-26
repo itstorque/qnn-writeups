@@ -28,7 +28,7 @@ The resulting circuit has 9 nodes, 4 resistors and 4 voltage-dependent frequency
 These sources have a defined way of operating through proportionality. Eventually, some sources became more complicated and started supporting the <code>POLY</code> command for analog behavioral modeling. As SPICE software became more advanced, B sources (behavioral sources) were introduced which can have arbitrary uncoupled inputs and a non-trivial function over them to control the output. Fun fact about B sources: current and voltage B sources are the same component. Also B sources have two largely undocumented modes of operation BP and BR (behavioral power source and behavioral resistor). I won't go into more weird sources in LTspice in this post, but there are very interesting tiny differences. In this post we use an E source because of a cool feature in the way LTspice lets us model frequency dependent behaviour.</blockquote>
 E-sources have 2 pairs of ports, the basic syntax describes that in the following manner: <code>Ex node+ node- control+ control- &lt;gain&gt;</code>. The syntax we will be using hinges on a special mode of operation of E sources:
 
-<code>Ex node+ node- FREQ {{V(control+, control-)}}= DB
+<code>Ex node+ node- FREQ \{\{V(control+, control-)\}\}= DB
 + (freq1, mag1, phase1)
 + (freq2, mag2, phase2)
 ...</code>

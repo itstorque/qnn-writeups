@@ -1,5 +1,5 @@
 ---
-title: "LTspice circuits to $\LaTeX$ tikz"
+title: "LTspice circuits to $\\LaTeX$ tikz"
 date: "2022-09-23"
 categories: 
   - "general"
